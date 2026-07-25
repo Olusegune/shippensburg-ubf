@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const hymns = [
+  { title: 'It Is Well With My Soul', url: 'http://webspace.ship.edu/ubf/hymn/554_ItIsWellWithMySoul.mp3' },
+  { title: 'Silent Night, Holy Night', url: 'http://webspace.ship.edu/ubf/hymn/171_SilentNightHolyNight.mp3' },
+  { title: 'Joy to the World', url: 'http://webspace.ship.edu/ubf/hymn/173_JoyToTheWorld.mp3' },
+  { title: 'I Surrender All', url: 'http://webspace.ship.edu/ubf/hymn/486_ISurrenderAll.mp3' },
+  { title: 'What a Friend We Have in Jesus', url: 'http://webspace.ship.edu/ubf/hymn/625_WhatAFriendWeHaveInJesus.mp3' },
+];
+---
+
+<BaseLayout title="Praise Music">
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-serif text-3xl font-semibold text-emerald-900">Praise Music</h1>
+    <p class="mt-2 text-stone-700">
+      The legacy site links to about 70 hymn and gospel recordings hosted on a university server. These are
+      external audio files, not mirrored here — recording licensing hasn't been confirmed with the ministry
+      yet, so this page links out rather than rehosting. A representative sample is shown below; see the
+      migration inventory for the full list.
+    </p>
+    <ul class="mt-6 space-y-2">
+      {hymns.map((h) => (
+        <li class="rounded-md border border-stone-200 bg-white px-4 py-3">
+          <a href={h.url} rel="external noopener" class="font-medium text-emerald-900 underline">{h.title}</a>
+          <span class="ml-2 text-xs text-stone-500">(external link)</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
