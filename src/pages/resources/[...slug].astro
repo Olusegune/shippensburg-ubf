@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { formatPassage } from '../../lib/passage';
+
+export async function getStaticPaths() {
+  const resources = await getCollection('resources', ({ data }) => data.status === 'published');
+  return resources.map((resource) => ({
+    params: { slug: resource.id },
+    props: { resource },
+  }));
+}
+
+const { resource } = Astro.props;
+const { Content } = await render(resource);
+const paired = resource.data.pairedResource ? await getEntry('resources', resource.data.pairedResource) : undefined;
+const passageLabel = formatPassage(resource.data.passage.start, resource.data.passage.end);
+---
+
+<BaseLayout title={resource.data.title} description={resource.data.summary}>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <nav aria-label="Breadcrumb" class="text-sm text-stone-500">
+      <a href="/resources/">Resources</a> /
+      <a href={`/resources/books/${resource.data.book.toLowerCase().replace(/\s+/g, '-')}/`}>{resource.data.book}</a>
+    </nav>
+
+    <h1 class="mt-2 font-serif text-3xl font-semibold text-emerald-900">{resource.data.title}</h1>
+    <p class="mt-1 text-emerald-800">{passageLabel}</p>
+    {resource.data.keyVerse && <p class="mt-1 text-sm italic text-stone-600">Key verse: {resource.data.keyVerse}</p>}
+
+    <div class="mt-4 flex flex-wrap gap-3">
+      {resource.data.pdf && (
+        <a href={resource.data.pdf} class="rounded-md bg-emerald-900 px-4 py-2 text-sm font-semibold text-white">Download PDF</a>
+      )}
+      <button type="button" onclick="window.print()" class="rounded-md border border-stone-300 px-4 py-2 text-sm font-medium">Print</button>
+    </div>
+
+    <div class="prose prose-stone mt-8 max-w-none">
+      <Content />
+    </div>
+
+    {paired && (
+      <div class="mt-8 rounded-lg border border-stone-200 bg-white p-4">
+        <p class="text-sm font-semibold text-stone-500">Related resource</p>
+        <a href={`/resources/${paired.id}/`} class="font-medium text-emerald-900">{paired.data.title}</a>
+      </div>
+    )}
+
+    {resource.data.source && (
+      <p class="mt-8 text-xs text-stone-500">Source: {resource.data.source}</p>
+    )}
+  </div>
+</BaseLayout>

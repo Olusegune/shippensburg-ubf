@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatPassage } from '../lib/passage';
+
+interface Props {
+  resource: CollectionEntry<'resources'>;
+}
+
+const { resource } = Astro.props;
+const { title, book, passage, series, lessonNumber } = resource.data;
+const passageLabel = formatPassage(passage.start, passage.end);
+---
+
+<article class="rounded-lg border border-stone-200 bg-white p-4">
+  <p class="text-sm font-medium text-emerald-900">{passageLabel}</p>
+  <h3 class="mt-1 font-semibold text-stone-900">
+    <a href={`/resources/${resource.id}/`}>{title}</a>
+  </h3>
+  {series && (
+    <p class="mt-1 text-xs text-stone-500">
+      {book}{lessonNumber ? ` · Lesson ${lessonNumber}` : ''}
+    </p>
+  )}
+  <div class="mt-3 flex gap-3 text-sm font-medium text-emerald-900">
+    <a href={`/resources/${resource.id}/`}>Read</a>
+    {resource.data.pdf && <a href={resource.data.pdf}>Download PDF</a>}
+  </div>
+</article>

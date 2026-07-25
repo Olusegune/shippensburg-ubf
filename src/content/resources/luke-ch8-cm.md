@@ -1,0 +1,19 @@
+---
+title: "Luke 8 Message Part C"
+book: "Luke"
+testament: "new"
+passage:
+  start: "Luke 8"
+resourceType: "message"
+lessonNumber: 8
+source: "ship-ubf.org (legacy site)"
+pdf: "/downloads/luke/LK08CM.pdf"
+legacyUrls:
+  - "/biblestudy/books/luke/LK08CM.pdf"
+status: "draft"
+---
+
+_Imported from the legacy site. Passage range and readable content still need manual review —
+this entry currently only links to the original downloaded file._
+
+[Download original file](/downloads/luke/LK08CM.pdf)

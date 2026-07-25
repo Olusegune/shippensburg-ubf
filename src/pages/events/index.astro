@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const now = new Date();
+const events = (await getCollection('events', ({ data }) => data.status === 'published'))
+  .sort((a, b) => a.data.startDate.valueOf() - b.data.startDate.valueOf());
+
+const upcoming = events.filter((e) => e.data.startDate >= now);
+const past = events.filter((e) => e.data.startDate < now);
+---
+
+<BaseLayout title="Events">
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <h1 class="font-serif text-3xl font-semibold text-emerald-900">Events</h1>
+
+    <h2 class="mt-8 font-serif text-xl font-semibold text-emerald-900">Upcoming</h2>
+    {upcoming.length === 0 ? (
+      <p class="mt-3 text-stone-600">No events are currently scheduled. Check back soon, or contact us to ask what's coming up.</p>
+    ) : (
+      <ul class="mt-4 space-y-3">
+        {upcoming.map((event) => (
+          <li class="rounded-lg border border-stone-200 bg-white p-4">
+            <a href={`/events/${event.id}/`} class="font-semibold text-emerald-900">{event.data.title}</a>
+            <p class="text-sm text-stone-600">{event.data.startDate.toLocaleDateString()} · {event.data.location ?? 'Online'}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+
+    {past.length > 0 && (
+      <details class="mt-8">
+        <summary class="cursor-pointer font-serif text-xl font-semibold text-emerald-900">Past events</summary>
+        <ul class="mt-4 space-y-2 text-sm text-stone-600">
+          {past.map((event) => <li>{event.data.title} — {event.data.startDate.toLocaleDateString()}</li>)}
+        </ul>
+      </details>
+    )}
+  </div>
+</BaseLayout>

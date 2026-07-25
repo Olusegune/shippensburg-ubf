@@ -1,0 +1,68 @@
+---
+const navItems = [
+  { label: 'About', href: '/about/' },
+  { label: 'Students', href: '/students/' },
+  { label: 'Bible Study', href: '/bible-study/' },
+  { label: 'Resources', href: '/resources/' },
+  { label: 'Events', href: '/events/' },
+  { label: 'Visit', href: '/visit/' },
+];
+---
+
+<header class="sticky top-0 z-40 border-b border-stone-200 bg-stone-50/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
+    <a href="/" class="font-serif text-lg font-semibold text-emerald-900">
+      UBF Shippensburg
+    </a>
+
+    <nav aria-label="Primary" class="hidden md:block">
+      <ul class="flex items-center gap-6 text-sm font-medium text-stone-700">
+        {navItems.map((item) => (
+          <li><a class="hover:text-emerald-900" href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+
+    <div class="hidden md:block">
+      <a
+        href="/students/one-to-one-bible-study/"
+        class="rounded-md bg-emerald-900 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-800"
+      >
+        Request Bible Study
+      </a>
+    </div>
+
+    <button
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      class="md:hidden inline-flex items-center rounded-md border border-stone-300 px-3 py-2 text-sm"
+      data-mobile-menu-trigger
+    >
+      Menu
+    </button>
+  </div>
+
+  <nav id="mobile-menu" aria-label="Mobile" class="hidden border-t border-stone-200 md:hidden" data-mobile-menu>
+    <ul class="flex flex-col gap-1 px-4 py-3 text-sm font-medium text-stone-700">
+      {navItems.map((item) => (
+        <li><a class="block py-2" href={item.href}>{item.label}</a></li>
+      ))}
+      <li>
+        <a class="mt-2 block rounded-md bg-emerald-900 px-4 py-2 text-center font-semibold text-white" href="/students/one-to-one-bible-study/">
+          Request Bible Study
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const trigger = document.querySelector('[data-mobile-menu-trigger]');
+  const menu = document.querySelector('[data-mobile-menu]');
+  trigger?.addEventListener('click', () => {
+    const expanded = trigger.getAttribute('aria-expanded') === 'true';
+    trigger.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+  });
+</script>

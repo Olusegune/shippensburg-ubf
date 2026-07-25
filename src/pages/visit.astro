@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const settings = await getEntry('settings', 'site');
+---
+
+<BaseLayout title="Visit">
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-serif text-3xl font-semibold text-emerald-900">Plan Your Visit</h1>
+    <dl class="mt-6 space-y-4">
+      <div>
+        <dt class="text-sm font-semibold text-stone-500">Sunday Worship</dt>
+        <dd class="text-stone-800">{settings?.data.worshipTime} · {settings?.data.worshipLocation}</dd>
+      </div>
+      <div>
+        <dt class="text-sm font-semibold text-stone-500">Weekly Fellowship</dt>
+        <dd class="text-stone-800">{settings?.data.fellowshipTime} · {settings?.data.fellowshipLocation}</dd>
+      </div>
+      <div>
+        <dt class="text-sm font-semibold text-stone-500">Address</dt>
+        <dd class="text-stone-800">{settings?.data.address}</dd>
+      </div>
+    </dl>
+    <a href={settings?.data.mapUrl} class="mt-4 inline-block font-medium text-emerald-900 underline">Get Directions</a>
+  </div>
+</BaseLayout>

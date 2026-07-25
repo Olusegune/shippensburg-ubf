@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ResourceCard from '../../../components/ResourceCard.astro';
+import { getCollection } from 'astro:content';
+import { BIBLE_BOOKS } from '../../../content.config';
+
+export async function getStaticPaths() {
+  const slugify = (book: string) => book.toLowerCase().replace(/\s+/g, '-');
+  const resources = await getCollection('resources', ({ data }) => data.status === 'published');
+  return BIBLE_BOOKS.filter((book) => resources.some((r) => r.data.book === book)).map((book) => ({
+    params: { book: slugify(book) },
+    props: { book },
+  }));
+}
+
+const { book } = Astro.props;
+const resources = (await getCollection('resources', ({ data }) => data.status === 'published' && data.book === book))
+  .sort((a, b) => (a.data.lessonNumber ?? 0) - (b.data.lessonNumber ?? 0));
+---
+
+<BaseLayout title={book}>
+  <div class="mx-auto max-w-6xl px-4 py-10">
+    <nav aria-label="Breadcrumb" class="text-sm text-stone-500">
+      <a href="/resources/books/">Books</a> / {book}
+    </nav>
+    <h1 class="mt-2 font-serif text-3xl font-semibold text-emerald-900">{book}</h1>
+    <p class="mt-2 text-stone-600">{resources.length} resource{resources.length === 1 ? '' : 's'}</p>
+
+    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {resources.map((resource) => <ResourceCard resource={resource} />)}
+    </div>
+  </div>
+</BaseLayout>

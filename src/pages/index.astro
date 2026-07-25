@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const settings = await getEntry('settings', 'site');
+---
+
+<BaseLayout title="Home">
+  <section class="mx-auto max-w-4xl px-4 py-16 text-center">
+    <h1 class="font-serif text-4xl font-semibold text-emerald-900 sm:text-5xl">
+      Know Jesus. Study His Word. Grow as His Disciple.
+    </h1>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-stone-700">
+      UBF Shippensburg is a Christian campus ministry serving students through personal Bible study, worship, and fellowship.
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="/students/one-to-one-bible-study/" class="rounded-md bg-emerald-900 px-6 py-3 font-semibold text-white hover:bg-emerald-800">
+        Request Bible Study
+      </a>
+      <a href="/visit/" class="rounded-md border border-emerald-900 px-6 py-3 font-semibold text-emerald-900 hover:bg-emerald-50">
+        Plan Your Visit
+      </a>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-8">
+    <h2 class="font-serif text-2xl font-semibold text-emerald-900">Jesus Christ</h2>
+    <p class="mt-3 text-stone-700">
+      We believe Jesus Christ died for our sins and rose again, offering salvation by grace through faith to all who follow him.
+      <a class="font-medium text-emerald-900 underline" href="/about/beliefs/">Read our full statement of faith &rarr;</a>
+    </p>
+  </section>
+
+  <section class="mx-auto grid max-w-4xl gap-6 px-4 py-8 sm:grid-cols-3">
+    <a href="/bible-study/start-here/" class="rounded-lg border border-stone-200 bg-white p-5 hover:border-emerald-900">
+      <h3 class="font-semibold text-emerald-900">New to Bible Study</h3>
+      <p class="mt-2 text-sm text-stone-600">Start with the nine-step introductory series.</p>
+    </a>
+    <a href="/resources/books/" class="rounded-lg border border-stone-200 bg-white p-5 hover:border-emerald-900">
+      <h3 class="font-semibold text-emerald-900">Study a Book of the Bible</h3>
+      <p class="mt-2 text-sm text-stone-600">Browse resources organized canonically.</p>
+    </a>
+    <a href="/resources/" class="rounded-lg border border-stone-200 bg-white p-5 hover:border-emerald-900">
+      <h3 class="font-semibold text-emerald-900">Recent Messages</h3>
+      <p class="mt-2 text-sm text-stone-600">Browse the full resource library.</p>
+    </a>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-8">
+    <h2 class="font-serif text-2xl font-semibold text-emerald-900">This Week</h2>
+    <dl class="mt-4 grid gap-4 sm:grid-cols-2">
+      <div class="rounded-lg border border-stone-200 bg-white p-4">
+        <dt class="text-sm font-semibold text-stone-500">Sunday Worship</dt>
+        <dd class="mt-1 text-stone-800">{settings?.data.worshipTime} · {settings?.data.worshipLocation}</dd>
+      </div>
+      <div class="rounded-lg border border-stone-200 bg-white p-4">
+        <dt class="text-sm font-semibold text-stone-500">Weekly Fellowship</dt>
+        <dd class="mt-1 text-stone-800">{settings?.data.fellowshipTime} · {settings?.data.fellowshipLocation}</dd>
+      </div>
+    </dl>
+    <p class="mt-3 text-xs text-stone-500">
+      This content is pulled from a single settings source so the homepage, Visit page, and About page never contradict each other.
+    </p>
+  </section>
+
+  <section class="mx-auto max-w-4xl px-4 py-12 text-center">
+    <p class="font-serif text-xl text-emerald-900">Would you like to study the Bible with someone?</p>
+    <a href="/students/one-to-one-bible-study/" class="mt-4 inline-block rounded-md bg-emerald-900 px-6 py-3 font-semibold text-white hover:bg-emerald-800">
+      Request Bible Study
+    </a>
+  </section>
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const events = await getCollection('events', ({ data }) => data.status === 'published');
+  return events.map((event) => ({ params: { slug: event.id }, props: { event } }));
+}
+
+const { event } = Astro.props;
+const { Content } = await render(event);
+---
+
+<BaseLayout title={event.data.title} description={event.data.summary}>
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <nav aria-label="Breadcrumb" class="text-sm text-stone-500"><a href="/events/">Events</a></nav>
+    <h1 class="mt-2 font-serif text-3xl font-semibold text-emerald-900">{event.data.title}</h1>
+    <p class="mt-1 text-stone-700">
+      {event.data.startDate.toLocaleDateString()}
+      {event.data.location && ` · ${event.data.location}`}
+    </p>
+    <div class="prose prose-stone mt-6 max-w-none">
+      <Content />
+    </div>
+    {event.data.registrationUrl && (
+      <a href={event.data.registrationUrl} class="mt-6 inline-block rounded-md bg-emerald-900 px-6 py-3 font-semibold text-white">Register</a>
+    )}
+  </div>
+</BaseLayout>
