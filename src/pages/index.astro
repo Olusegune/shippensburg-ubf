@@ -1,26 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import heroStudents from '../assets/images/hero-students.png';
 
 const settings = await getEntry('settings', 'site');
 ---
 
 <BaseLayout title="Home">
-  <!--
-    Hero background: an original gradient + silhouette placeholder, not a copy
-    of any reference photo. Swap for real ministry photography (see
-    dev_spec.md "Required before visual design") — the curved divider and
-    text-overlay layout will keep working with any full-bleed photo.
-  -->
   <section class="relative overflow-hidden pb-20 text-center text-white sm:pb-28">
-    <div
-      class="absolute inset-0 -z-10"
-      style="background: linear-gradient(180deg, #2b0d1a 0%, #6f2418 38%, #c96a2e 62%, #e8a24a 78%, #f3c877 100%);"
-    >
-      <svg viewBox="0 0 800 300" preserveAspectRatio="none" class="absolute bottom-0 h-1/2 w-full opacity-90" aria-hidden="true">
-        <polygon points="0,300 0,180 60,150 90,190 140,120 180,180 220,140 260,190 800,110 800,300" fill="#1a0a10" />
-      </svg>
-      <div class="absolute inset-0 bg-maroon-950/35"></div>
+    <div class="absolute inset-0 -z-10">
+      <Image
+        src={heroStudents}
+        alt="Students studying the Bible together outdoors at sunset on the Shippensburg University campus"
+        widths={[640, 1024, 1600, 2000]}
+        sizes="100vw"
+        format="avif"
+        quality="high"
+        class="h-full w-full object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-maroon-950/85 via-maroon-950/35 to-maroon-950/50"></div>
     </div>
 
     <div class="relative mx-auto max-w-4xl px-4 pt-20 sm:pt-28">
@@ -75,7 +74,7 @@ const settings = await getEntry('settings', 'site');
     </div>
   </section>
 
-  <section class="mx-auto grid max-w-5xl gap-6 px-4 py-8 sm:grid-cols-3">
+  <section class="mx-auto grid max-w-5xl gap-6 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4">
     {[
       {
         href: '/bible-study/start-here/',
@@ -98,6 +97,13 @@ const settings = await getEntry('settings', 'site');
         cta: 'View Messages',
         icon: 'mic',
       },
+      {
+        href: '/bible-study/daily-bread/',
+        title: 'Daily Bread',
+        body: 'A short Bible passage, reflection, and prayer for today, published by UBF.',
+        cta: "Read Today's Devotional",
+        icon: 'sun',
+      },
     ].map((card) => (
       <a href={card.href} class="rounded-lg border border-cream-200 bg-white p-5 hover:border-maroon-700">
         <span class="flex h-11 w-11 items-center justify-center rounded-full bg-maroon-800 text-white">
@@ -109,6 +115,9 @@ const settings = await getEntry('settings', 'site');
           )}
           {card.icon === 'mic' && (
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          )}
+          {card.icon === 'sun' && (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
           )}
         </span>
         <h3 class="mt-3 font-semibold text-maroon-800">{card.title}</h3>
@@ -144,8 +153,18 @@ const settings = await getEntry('settings', 'site');
   </section>
 
   <section class="relative overflow-hidden py-16 text-center text-white">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-maroon-950 via-maroon-800 to-maroon-950"></div>
-    <div class="absolute inset-0 -z-10 bg-black/25"></div>
+    <div class="absolute inset-0 -z-10">
+      <Image
+        src={heroStudents}
+        alt=""
+        widths={[640, 1024, 1600, 2000]}
+        sizes="100vw"
+        format="avif"
+        quality="high"
+        class="h-full w-full object-cover object-[50%_30%]"
+      />
+      <div class="absolute inset-0 bg-maroon-950/80"></div>
+    </div>
     <div class="relative mx-auto max-w-2xl px-4">
       <p class="font-serif text-2xl font-semibold">Would you like to study the Bible with someone?</p>
       <p class="mt-2 text-cream-50/90">We would love to walk with you in God's Word.</p>

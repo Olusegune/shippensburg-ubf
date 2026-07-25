@@ -1,25 +1,40 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
 import { getEntry } from 'astro:content';
 
 const settings = await getEntry('settings', 'site');
 ---
 
 <BaseLayout title="Contact">
+  <PageHeader title="Contact Us" subtitle="Have a question? We'd love to hear from you." />
+
   <div class="mx-auto max-w-3xl px-4 py-10">
-    <h1 class="font-serif text-3xl font-semibold text-maroon-800">Contact</h1>
-    <p class="mt-4 text-stone-700">Have a question? Reach out — we'd love to hear from you.</p>
-    <dl class="mt-6 space-y-3">
-      <div>
-        <dt class="text-sm font-semibold text-stone-500">Email</dt>
-        <dd><a class="text-maroon-800 underline" href={`mailto:${settings?.data.ministryEmail}`}>{settings?.data.ministryEmail}</a></dd>
+    <div class="grid gap-4 sm:grid-cols-2">
+      <div class="flex items-start gap-4 rounded-lg border border-cream-200 bg-white p-5">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-6 w-6 shrink-0 text-maroon-700" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+        <div>
+          <h2 class="font-semibold text-stone-800">Email</h2>
+          <a class="mt-1 inline-block text-maroon-800 underline underline-offset-2" href={`mailto:${settings?.data.ministryEmail}`}>{settings?.data.ministryEmail}</a>
+        </div>
       </div>
       {settings?.data.phone && (
-        <div>
-          <dt class="text-sm font-semibold text-stone-500">Phone</dt>
-          <dd class="text-stone-800">{settings.data.phone}</dd>
+        <div class="flex items-start gap-4 rounded-lg border border-cream-200 bg-white p-5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-6 w-6 shrink-0 text-maroon-700" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <div>
+            <h2 class="font-semibold text-stone-800">Phone</h2>
+            <p class="mt-1 text-stone-600">{settings.data.phone}</p>
+          </div>
         </div>
       )}
-    </dl>
+      <div class="flex items-start gap-4 rounded-lg border border-cream-200 bg-white p-5 sm:col-span-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-6 w-6 shrink-0 text-maroon-700" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <div>
+          <h2 class="font-semibold text-stone-800">Visit In Person</h2>
+          <p class="mt-1 text-stone-600">{settings?.data.worshipTime} at {settings?.data.worshipLocation}, or {settings?.data.fellowshipTime} at {settings?.data.fellowshipLocation}.</p>
+          <a href="/visit/" class="mt-2 inline-block font-medium text-maroon-800 underline underline-offset-2">Plan your visit &rarr;</a>
+        </div>
+      </div>
+    </div>
   </div>
 </BaseLayout>

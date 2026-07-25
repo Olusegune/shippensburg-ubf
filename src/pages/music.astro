@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
 
 const hymns = [
   { title: 'It Is Well With My Soul', url: 'http://webspace.ship.edu/ubf/hymn/554_ItIsWellWithMySoul.mp3' },
@@ -11,9 +12,9 @@ const hymns = [
 ---
 
 <BaseLayout title="Praise Music">
+  <PageHeader title="Praise Music" />
   <div class="mx-auto max-w-3xl px-4 py-10">
-    <h1 class="font-serif text-3xl font-semibold text-maroon-800">Praise Music</h1>
-    <p class="mt-2 text-stone-700">
+    <p class="text-stone-700">
       The legacy site links to about 70 hymn and gospel recordings hosted on a university server. These are
       external audio files, not mirrored here — recording licensing hasn't been confirmed with the ministry
       yet, so this page links out rather than rehosting. A representative sample is shown below; see the

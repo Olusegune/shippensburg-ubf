@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Daily Bread"
+  description="Read today's Daily Bread devotional — a Bible passage, reflection, and prayer for each day, published by UBF."
+>
+  <div class="mx-auto max-w-2xl px-4 py-10 text-center">
+    <span class="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-maroon-800 text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-7 w-7" aria-hidden="true">
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      </svg>
+    </span>
+    <h1 class="mt-4 font-serif text-3xl font-semibold text-maroon-800">Daily Bread</h1>
+    <p class="mt-3 text-stone-700">
+      Daily Bread is UBF's daily devotional: a short Bible passage, reflection, and prayer prompt for each day,
+      published at <strong>ubf.org</strong>.
+    </p>
+    <p class="mt-3 text-sm text-stone-600">
+      We link directly to today's entry rather than copying it here, so you always get the current day's
+      devotional — never an out-of-date copy.
+    </p>
+
+    <a
+      href="https://ubf.org/daily-breads"
+      rel="external noopener"
+      class="mt-8 inline-flex items-center gap-2 rounded-md bg-maroon-700 px-6 py-3 font-semibold text-white hover:bg-maroon-600"
+    >
+      Read Today's Daily Bread
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true">
+        <path d="M7 17 17 7"/><path d="M7 7h10v10"/>
+      </svg>
+    </a>
+
+    <div class="mt-10 rounded-lg border border-cream-200 bg-cream-50 p-5 text-left text-sm text-stone-600">
+      <p class="font-semibold text-stone-800">Looking for a past entry?</p>
+      <p class="mt-1">
+        Browse the full <a class="font-medium text-maroon-800 underline underline-offset-2" href="https://ubf.org/daily-breads/list" rel="external noopener">Daily Bread archive</a> on ubf.org.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

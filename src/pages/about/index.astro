@@ -1,17 +1,39 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHeader from '../../components/PageHeader.astro';
+
+const pillars = [
+  { title: 'Bible Study', body: 'One-to-one and small group study of God\'s Word, at the center of everything we do.' },
+  { title: 'Worship & Fellowship', body: 'Sunday worship and weekly fellowship, growing together as a spiritual family.' },
+  { title: 'Disciple-Making', body: 'Helping students grow as disciples of Jesus who love God and serve others.' },
+  { title: 'World Mission', body: 'Part of a worldwide fellowship sending disciples to serve students everywhere.' },
+];
 ---
 
 <BaseLayout title="About">
+  <PageHeader title="About UBF Shippensburg" subtitle="A Christian campus ministry at Shippensburg University" />
+
   <div class="mx-auto max-w-3xl px-4 py-10">
-    <h1 class="font-serif text-3xl font-semibold text-maroon-800">About UBF Shippensburg</h1>
-    <p class="mt-4 text-stone-700">
+    <p class="text-stone-700">
       University Bible Fellowship of Shippensburg is a Christian campus ministry devoted to Bible study, worship,
-      fellowship, and disciple-making among students at Shippensburg University.
+      fellowship, and disciple-making among students at Shippensburg University. We are part of University Bible
+      Fellowship (UBF), a worldwide campus ministry.
     </p>
     <p class="mt-4 text-stone-700">
-      Placeholder copy — replace with approved mission statement during Phase 2 content migration.
+      Placeholder copy — replace with the ministry's approved mission statement during the content review pass.
     </p>
-    <a href="/about/beliefs/" class="mt-4 inline-block font-medium text-maroon-800 underline">Read our statement of faith</a>
+
+    <div class="mt-8 grid gap-4 sm:grid-cols-2">
+      {pillars.map((pillar) => (
+        <div class="rounded-lg border border-cream-200 bg-white p-5">
+          <h2 class="font-semibold text-maroon-800">{pillar.title}</h2>
+          <p class="mt-2 text-sm text-stone-600">{pillar.body}</p>
+        </div>
+      ))}
+    </div>
+
+    <a href="/about/beliefs/" class="mt-8 inline-block font-medium text-maroon-800 underline underline-offset-2">
+      Read our full statement of faith &rarr;
+    </a>
   </div>
 </BaseLayout>

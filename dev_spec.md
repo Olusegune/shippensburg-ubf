@@ -20,7 +20,10 @@ Scaffolded per the approved brief (Steps 1–7). This file tracks what's impleme
 - `trailingSlash: 'always'` to match the brief's URL strategy
 - Pagefind site-wide search (`/search/`) — index generated as a postbuild step; only works after `npm run build`, not in `astro dev`
 - Legacy URL redirects (`public/_redirects`, Cloudflare Pages format) — regenerate with `node scripts/generate-redirects.mjs` after content changes
-- Visual design system: maroon/gold/cream palette (see `src/styles/global.css` `@theme` block), replacing the initial emerald/stone placeholder theme. Logo emblem in `src/components/Logo.astro` and hero/CTA background art in `src/pages/index.astro` are **original placeholders**, not copies of any reference image — swap for real ministry logo/photography when available (still an outstanding item)
+- Visual design system: maroon/gold/cream palette (see `src/styles/global.css` `@theme` block), replacing the initial emerald/stone placeholder theme. Logo emblem in `src/components/Logo.astro` is still an **original placeholder**, not the ministry's real logo — swap when available
+- Homepage hero/CTA band use a user-supplied campus photo (`src/assets/images/hero-students.png`), optimized to AVIF at build time via `astro:assets`. Still a stand-in for confirmed ministry photography, but a real, usable photo rather than a gradient
+- `PageHeader` component (`src/components/PageHeader.astro`) gives inner pages (About, Students, Visit, Contact, Bible Study, Start Here, Beliefs, Music, People, Links, Privacy, Accessibility) a consistent banner treatment
+- Daily Bread (`/bible-study/daily-bread/`) links directly to today's entry on ubf.org rather than scraping/mirroring it — that page's devotional commentary and NIV/ESV Bible text are copyrighted and not ours to republish; linking to the live "today" URL also means it never goes stale
 - Footer "Verse of the Day" uses a small curated King James Version (public domain) verse list (`src/lib/verse-of-day.ts`) — swap translation once the ministry confirms a preference
 - `/resources/` index splits Old/New Testament with canonical book-and-chapter ordering (not alphabetical)
 
