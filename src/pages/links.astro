@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const links = [
+  { title: 'World Mission', href: 'http://www.ubf.org/worldmission/', description: 'UBF\'s worldwide mission work.' },
+  { title: 'Daily Bread', href: 'http://www.ubf.org/daily-bread', description: 'Daily devotional Bible reading.' },
+  { title: 'Global UBF', href: 'https://ubf.org', description: 'University Bible Fellowship international.' },
+];
+---
+
+<BaseLayout title="Links">
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <h1 class="font-serif text-3xl font-semibold text-maroon-800">Links</h1>
+    <p class="mt-2 text-stone-700">External resources related to our ministry and the wider UBF community.</p>
+    <ul class="mt-6 space-y-3">
+      {links.map((link) => (
+        <li class="rounded-lg border border-cream-200 bg-white p-4">
+          <a href={link.href} rel="external noopener" class="font-semibold text-maroon-800 underline underline-offset-2">{link.title}</a>
+          <p class="mt-1 text-sm text-stone-600">{link.description}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

@@ -7,7 +7,7 @@ const settings = await getEntry('settings', 'site');
 
 <BaseLayout title="Visit">
   <div class="mx-auto max-w-3xl px-4 py-10">
-    <h1 class="font-serif text-3xl font-semibold text-emerald-900">Plan Your Visit</h1>
+    <h1 class="font-serif text-3xl font-semibold text-maroon-800">Plan Your Visit</h1>
     <dl class="mt-6 space-y-4">
       <div>
         <dt class="text-sm font-semibold text-stone-500">Sunday Worship</dt>
@@ -22,6 +22,6 @@ const settings = await getEntry('settings', 'site');
         <dd class="text-stone-800">{settings?.data.address}</dd>
       </div>
     </dl>
-    <a href={settings?.data.mapUrl} class="mt-4 inline-block font-medium text-emerald-900 underline">Get Directions</a>
+    <a href={settings?.data.mapUrl} class="mt-4 inline-block font-medium text-maroon-800 underline">Get Directions</a>
   </div>
 </BaseLayout>

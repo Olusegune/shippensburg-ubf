@@ -1,4 +1,6 @@
 ---
+import Logo from './Logo.astro';
+
 const navItems = [
   { label: 'About', href: '/about/' },
   { label: 'Students', href: '/students/' },
@@ -6,25 +8,24 @@ const navItems = [
   { label: 'Resources', href: '/resources/' },
   { label: 'Events', href: '/events/' },
   { label: 'Visit', href: '/visit/' },
+  { label: 'Links', href: '/links/' },
 ];
 ---
 
-<header class="sticky top-0 z-40 border-b border-stone-200 bg-stone-50/95 backdrop-blur">
+<header class="sticky top-0 z-40 bg-maroon-900">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
-    <a href="/" class="font-serif text-lg font-semibold text-emerald-900">
-      UBF Shippensburg
-    </a>
+    <Logo variant="light" />
 
-    <nav aria-label="Primary" class="hidden md:block">
-      <ul class="flex items-center gap-6 text-sm font-medium text-stone-700">
+    <nav aria-label="Primary" class="hidden lg:block">
+      <ul class="flex items-center gap-5 text-sm font-medium text-cream-100">
         {navItems.map((item) => (
-          <li><a class="hover:text-emerald-900" href={item.href}>{item.label}</a></li>
+          <li><a class="hover:text-gold-400" href={item.href}>{item.label}</a></li>
         ))}
       </ul>
     </nav>
 
-    <div class="hidden items-center gap-3 md:flex">
-      <a href="/search/" aria-label="Search" class="rounded-md p-2 text-stone-600 hover:bg-stone-100 hover:text-emerald-900">
+    <div class="hidden items-center gap-3 lg:flex">
+      <a href="/search/" aria-label="Search" class="rounded-md p-2 text-cream-100 hover:bg-maroon-800 hover:text-gold-400">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
           <circle cx="11" cy="11" r="7"></circle>
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -32,7 +33,7 @@ const navItems = [
       </a>
       <a
         href="/students/one-to-one-bible-study/"
-        class="rounded-md bg-emerald-900 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-800"
+        class="rounded-md bg-gold-500 px-4 py-2 text-sm font-semibold text-maroon-950 hover:bg-gold-400"
       >
         Request Bible Study
       </a>
@@ -42,21 +43,21 @@ const navItems = [
       type="button"
       aria-expanded="false"
       aria-controls="mobile-menu"
-      class="md:hidden inline-flex items-center rounded-md border border-stone-300 px-3 py-2 text-sm"
+      class="lg:hidden inline-flex items-center rounded-md border border-cream-100/40 px-3 py-2 text-sm text-cream-100"
       data-mobile-menu-trigger
     >
       Menu
     </button>
   </div>
 
-  <nav id="mobile-menu" aria-label="Mobile" class="hidden border-t border-stone-200 md:hidden" data-mobile-menu>
-    <ul class="flex flex-col gap-1 px-4 py-3 text-sm font-medium text-stone-700">
+  <nav id="mobile-menu" aria-label="Mobile" class="hidden border-t border-maroon-800 lg:hidden" data-mobile-menu>
+    <ul class="flex flex-col gap-1 px-4 py-3 text-sm font-medium text-cream-100">
       {navItems.map((item) => (
         <li><a class="block py-2" href={item.href}>{item.label}</a></li>
       ))}
       <li><a class="block py-2" href="/search/">Search</a></li>
       <li>
-        <a class="mt-2 block rounded-md bg-emerald-900 px-4 py-2 text-center font-semibold text-white" href="/students/one-to-one-bible-study/">
+        <a class="mt-2 block rounded-md bg-gold-500 px-4 py-2 text-center font-semibold text-maroon-950" href="/students/one-to-one-bible-study/">
           Request Bible Study
         </a>
       </li>

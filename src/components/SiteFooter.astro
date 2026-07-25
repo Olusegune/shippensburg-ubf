@@ -1,39 +1,76 @@
 ---
+import { getEntry } from 'astro:content';
+import { getVerseOfDay } from '../lib/verse-of-day';
+
 const year = new Date().getFullYear();
+const settings = await getEntry('settings', 'site');
+const verse = getVerseOfDay();
 ---
 
-<footer class="mt-16 border-t border-stone-200 bg-white">
-  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 text-sm text-stone-600 sm:grid-cols-3">
+<footer class="mt-16 bg-maroon-900 text-cream-100">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 text-sm sm:grid-cols-2 lg:grid-cols-5">
     <div>
-      <h2 class="mb-3 font-semibold text-stone-900">Ministry</h2>
+      <h2 class="mb-3 text-xs font-semibold tracking-wider text-gold-400 uppercase">Ministry</h2>
       <ul class="space-y-2">
-        <li><a href="/about/">About</a></li>
-        <li><a href="/about/beliefs/">Beliefs</a></li>
-        <li><a href="/students/">Students</a></li>
-        <li><a href="/visit/">Worship</a></li>
-        <li><a href="/events/">Events</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a class="hover:text-gold-400" href="/about/">About UBF</a></li>
+        <li><a class="hover:text-gold-400" href="/about/beliefs/">Our Beliefs</a></li>
+        <li><a class="hover:text-gold-400" href="/students/">Students</a></li>
+        <li><a class="hover:text-gold-400" href="/visit/">Worship</a></li>
+        <li><a class="hover:text-gold-400" href="/students/one-to-one-bible-study/">One-to-One Bible Study</a></li>
+        <li><a class="hover:text-gold-400" href="/contact/">Contact Us</a></li>
       </ul>
     </div>
     <div>
-      <h2 class="mb-3 font-semibold text-stone-900">Study</h2>
+      <h2 class="mb-3 text-xs font-semibold tracking-wider text-gold-400 uppercase">Bible Study</h2>
       <ul class="space-y-2">
-        <li><a href="/bible-study/start-here/">Start Here</a></li>
-        <li><a href="/resources/books/">Books of the Bible</a></li>
-        <li><a href="/bible-study/nine-step-study/">Study Series</a></li>
-        <li><a href="/resources/">All Resources</a></li>
+        <li><a class="hover:text-gold-400" href="/bible-study/start-here/">Start Here</a></li>
+        <li><a class="hover:text-gold-400" href="/bible-study/nine-step-study/">Nine-Step Study</a></li>
+        <li><a class="hover:text-gold-400" href="/resources/books/">Books of the Bible</a></li>
+        <li><a class="hover:text-gold-400" href="/resources/">All Resources</a></li>
       </ul>
     </div>
     <div>
-      <h2 class="mb-3 font-semibold text-stone-900">UBF</h2>
+      <h2 class="mb-3 text-xs font-semibold tracking-wider text-gold-400 uppercase">UBF Links</h2>
       <ul class="space-y-2">
-        <li><a href="https://ubf.org" rel="external">Worldwide UBF</a></li>
-        <li><a href="/privacy/">Privacy</a></li>
-        <li><a href="/accessibility/">Accessibility</a></li>
+        <li><a class="hover:text-gold-400" href="http://www.ubf.org/worldmission/" rel="external">World Mission</a></li>
+        <li><a class="hover:text-gold-400" href="http://www.ubf.org/daily-bread" rel="external">Daily Bread</a></li>
+        <li><a class="hover:text-gold-400" href="https://ubf.org" rel="external">Global UBF</a></li>
       </ul>
+    </div>
+    <div>
+      <h2 class="mb-3 text-xs font-semibold tracking-wider text-gold-400 uppercase">Connect</h2>
+      <address class="space-y-1 not-italic">
+        <p>UBF Shippensburg</p>
+        <p>{settings?.data.address}</p>
+        <p class="pt-2"><a class="hover:text-gold-400" href={`mailto:${settings?.data.ministryEmail}`}>{settings?.data.ministryEmail}</a></p>
+      </address>
+      {settings?.data.socialUrls && settings.data.socialUrls.length > 0 && (
+        <div class="mt-3 flex gap-2">
+          {settings.data.socialUrls.map((url) => (
+            <a href={url} rel="external" aria-label="Facebook" class="flex h-8 w-8 items-center justify-center rounded border border-cream-100/40 hover:border-gold-400 hover:text-gold-400">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+                <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/>
+              </svg>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+    <div>
+      <h2 class="mb-3 text-xs font-semibold tracking-wider text-gold-400 uppercase">Verse of the Day</h2>
+      <blockquote class="italic text-cream-100/90">
+        &ldquo;{verse.text}&rdquo;
+      </blockquote>
+      <p class="mt-2 text-cream-100/70">&mdash; {verse.reference} (KJV)</p>
     </div>
   </div>
-  <div class="border-t border-stone-200 px-4 py-4 text-center text-xs text-stone-500">
-    &copy; {year} University Bible Fellowship of Shippensburg
+  <div class="border-t border-cream-100/15 px-4 py-4">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 text-xs text-cream-100/70 sm:flex-row">
+      <p>&copy; {year} University Bible Fellowship of Shippensburg. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a class="hover:text-gold-400" href="/privacy/">Privacy Policy</a>
+        <a class="hover:text-gold-400" href="/accessibility/">Accessibility</a>
+      </div>
+    </div>
   </div>
 </footer>

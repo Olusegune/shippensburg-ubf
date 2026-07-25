@@ -16,8 +16,13 @@ Scaffolded per the approved brief (Steps 1–7). This file tracks what's impleme
 - Events index with upcoming/past separation (past events never render as upcoming)
 - Bible-study-request form (Netlify Forms attributes, honeypot field, consent checkbox)
 - Visit/Contact pages reading from the single `settings` canonical source
-- Privacy/Accessibility placeholder pages, `/resources/people/` (leaders & character studies), `/music/`
+- Privacy/Accessibility placeholder pages, `/resources/people/` (leaders & character studies), `/music/`, `/links/`
 - `trailingSlash: 'always'` to match the brief's URL strategy
+- Pagefind site-wide search (`/search/`) — index generated as a postbuild step; only works after `npm run build`, not in `astro dev`
+- Legacy URL redirects (`public/_redirects`, Cloudflare Pages format) — regenerate with `node scripts/generate-redirects.mjs` after content changes
+- Visual design system: maroon/gold/cream palette (see `src/styles/global.css` `@theme` block), replacing the initial emerald/stone placeholder theme. Logo emblem in `src/components/Logo.astro` and hero/CTA background art in `src/pages/index.astro` are **original placeholders**, not copies of any reference image — swap for real ministry logo/photography when available (still an outstanding item)
+- Footer "Verse of the Day" uses a small curated King James Version (public domain) verse list (`src/lib/verse-of-day.ts`) — swap translation once the ministry confirms a preference
+- `/resources/` index splits Old/New Testament with canonical book-and-chapter ordering (not alphabetical)
 
 ## Content migration status (from ship-ubf.org)
 Scripts live in `scripts/`, re-runnable against `migration/download_log.csv` and friends.

@@ -7,12 +7,12 @@ const settings = await getEntry('settings', 'site');
 
 <BaseLayout title="Contact">
   <div class="mx-auto max-w-3xl px-4 py-10">
-    <h1 class="font-serif text-3xl font-semibold text-emerald-900">Contact</h1>
+    <h1 class="font-serif text-3xl font-semibold text-maroon-800">Contact</h1>
     <p class="mt-4 text-stone-700">Have a question? Reach out — we'd love to hear from you.</p>
     <dl class="mt-6 space-y-3">
       <div>
         <dt class="text-sm font-semibold text-stone-500">Email</dt>
-        <dd><a class="text-emerald-900 underline" href={`mailto:${settings?.data.ministryEmail}`}>{settings?.data.ministryEmail}</a></dd>
+        <dd><a class="text-maroon-800 underline" href={`mailto:${settings?.data.ministryEmail}`}>{settings?.data.ministryEmail}</a></dd>
       </div>
       {settings?.data.phone && (
         <div>

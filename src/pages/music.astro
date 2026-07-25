@@ -12,7 +12,7 @@ const hymns = [
 
 <BaseLayout title="Praise Music">
   <div class="mx-auto max-w-3xl px-4 py-10">
-    <h1 class="font-serif text-3xl font-semibold text-emerald-900">Praise Music</h1>
+    <h1 class="font-serif text-3xl font-semibold text-maroon-800">Praise Music</h1>
     <p class="mt-2 text-stone-700">
       The legacy site links to about 70 hymn and gospel recordings hosted on a university server. These are
       external audio files, not mirrored here — recording licensing hasn't been confirmed with the ministry
@@ -21,8 +21,8 @@ const hymns = [
     </p>
     <ul class="mt-6 space-y-2">
       {hymns.map((h) => (
-        <li class="rounded-md border border-stone-200 bg-white px-4 py-3">
-          <a href={h.url} rel="external noopener" class="font-medium text-emerald-900 underline">{h.title}</a>
+        <li class="rounded-md border border-cream-200 bg-white px-4 py-3">
+          <a href={h.url} rel="external noopener" class="font-medium text-maroon-800 underline">{h.title}</a>
           <span class="ml-2 text-xs text-stone-500">(external link)</span>
         </li>
       ))}

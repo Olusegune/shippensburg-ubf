@@ -6,67 +6,152 @@ const settings = await getEntry('settings', 'site');
 ---
 
 <BaseLayout title="Home">
-  <section class="mx-auto max-w-4xl px-4 py-16 text-center">
-    <h1 class="font-serif text-4xl font-semibold text-emerald-900 sm:text-5xl">
-      Know Jesus. Study His Word. Grow as His Disciple.
-    </h1>
-    <p class="mx-auto mt-4 max-w-2xl text-lg text-stone-700">
-      UBF Shippensburg is a Christian campus ministry serving students through personal Bible study, worship, and fellowship.
-    </p>
-    <div class="mt-8 flex flex-wrap justify-center gap-4">
-      <a href="/students/one-to-one-bible-study/" class="rounded-md bg-emerald-900 px-6 py-3 font-semibold text-white hover:bg-emerald-800">
-        Request Bible Study
-      </a>
-      <a href="/visit/" class="rounded-md border border-emerald-900 px-6 py-3 font-semibold text-emerald-900 hover:bg-emerald-50">
-        Plan Your Visit
-      </a>
+  <!--
+    Hero background: an original gradient + silhouette placeholder, not a copy
+    of any reference photo. Swap for real ministry photography (see
+    dev_spec.md "Required before visual design") — the curved divider and
+    text-overlay layout will keep working with any full-bleed photo.
+  -->
+  <section class="relative overflow-hidden pb-20 text-center text-white sm:pb-28">
+    <div
+      class="absolute inset-0 -z-10"
+      style="background: linear-gradient(180deg, #2b0d1a 0%, #6f2418 38%, #c96a2e 62%, #e8a24a 78%, #f3c877 100%);"
+    >
+      <svg viewBox="0 0 800 300" preserveAspectRatio="none" class="absolute bottom-0 h-1/2 w-full opacity-90" aria-hidden="true">
+        <polygon points="0,300 0,180 60,150 90,190 140,120 180,180 220,140 260,190 800,110 800,300" fill="#1a0a10" />
+      </svg>
+      <div class="absolute inset-0 bg-maroon-950/35"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-4xl px-4 pt-20 sm:pt-28">
+      <h1 class="font-serif text-4xl leading-tight font-semibold sm:text-5xl">
+        Know Jesus. Study His Word. Grow as His Disciple.
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-lg text-cream-50/95">
+        UBF Shippensburg is a Christian campus ministry serving students through personal Bible study, worship, and fellowship.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="/students/one-to-one-bible-study/" class="rounded-md bg-maroon-700 px-6 py-3 font-semibold hover:bg-maroon-600">
+          Request Bible Study
+        </a>
+        <a href="/visit/" class="rounded-md border border-white/70 px-6 py-3 font-semibold hover:bg-white/10">
+          Plan Your Visit
+        </a>
+      </div>
+    </div>
+
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" class="absolute bottom-0 h-10 w-full text-cream-50 sm:h-14">
+      <path d="M0,60 C360,0 1080,0 1440,60 L1440,60 L0,60 Z" fill="currentColor" />
+    </svg>
+  </section>
+
+  <section class="bg-cream-50 py-10">
+    <div class="mx-auto grid max-w-5xl gap-6 px-4 lg:grid-cols-[auto_1fr] lg:items-center">
+      <div class="flex items-start gap-4">
+        <svg viewBox="0 0 48 56" class="h-14 w-12 shrink-0" aria-hidden="true">
+          <ellipse cx="24" cy="28" rx="23" ry="27" fill="#C8982F" />
+          <ellipse cx="24" cy="28" rx="19" ry="23" fill="#5C1220" />
+          <rect x="15" y="30" width="18" height="13" rx="1.5" fill="#FAF6EE" />
+          <g transform="translate(24,20)">
+            <rect x="-1.6" y="-9" width="3.2" height="16" rx="1" fill="#FAF6EE" />
+            <rect x="-7" y="-4" width="14" height="3.2" rx="1" fill="#FAF6EE" />
+          </g>
+        </svg>
+        <div>
+          <h2 class="font-serif text-2xl font-semibold text-maroon-800">Jesus Christ</h2>
+          <p class="mt-2 max-w-xl text-stone-700">
+            We believe Jesus Christ died for our sins and rose again, offering salvation by grace through faith to all who follow him.
+          </p>
+          <a class="mt-2 inline-block font-medium text-maroon-800 underline underline-offset-2 hover:text-maroon-600" href="/about/beliefs/">
+            Read our full statement of faith &rarr;
+          </a>
+        </div>
+      </div>
+
+      <blockquote class="rounded-lg bg-cream-200 p-6 text-stone-700 italic">
+        <p>&ldquo;I am the vine; you are the branches. If a man remains in me and I in him, he will bear much fruit; apart from me you can do nothing.&rdquo;</p>
+        <footer class="mt-3 not-italic text-stone-500">&mdash; John 15:5</footer>
+      </blockquote>
     </div>
   </section>
 
-  <section class="mx-auto max-w-4xl px-4 py-8">
-    <h2 class="font-serif text-2xl font-semibold text-emerald-900">Jesus Christ</h2>
-    <p class="mt-3 text-stone-700">
-      We believe Jesus Christ died for our sins and rose again, offering salvation by grace through faith to all who follow him.
-      <a class="font-medium text-emerald-900 underline" href="/about/beliefs/">Read our full statement of faith &rarr;</a>
-    </p>
+  <section class="mx-auto grid max-w-5xl gap-6 px-4 py-8 sm:grid-cols-3">
+    {[
+      {
+        href: '/bible-study/start-here/',
+        title: 'New to Bible Study',
+        body: 'Start with the nine-step introductory series designed for new believers.',
+        cta: 'Start Here',
+        icon: 'book',
+      },
+      {
+        href: '/resources/books/',
+        title: 'Study a Book of the Bible',
+        body: 'Browse resources organized canonically by every book of the Bible.',
+        cta: 'Browse Books',
+        icon: 'document',
+      },
+      {
+        href: '/resources/',
+        title: 'Recent Messages',
+        body: 'Listen to and read the latest Bible messages and teaching from our fellowship.',
+        cta: 'View Messages',
+        icon: 'mic',
+      },
+    ].map((card) => (
+      <a href={card.href} class="rounded-lg border border-cream-200 bg-white p-5 hover:border-maroon-700">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-maroon-800 text-white">
+          {card.icon === 'book' && (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M2 4h6a4 4 0 0 1 4 4v12a3 3 0 0 0-3-3H2z"/><path d="M22 4h-6a4 4 0 0 0-4 4v12a3 3 0 0 1 3-3h7z"/></svg>
+          )}
+          {card.icon === 'document' && (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+          )}
+          {card.icon === 'mic' && (
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          )}
+        </span>
+        <h3 class="mt-3 font-semibold text-maroon-800">{card.title}</h3>
+        <p class="mt-2 text-sm text-stone-600">{card.body}</p>
+        <p class="mt-3 text-sm font-semibold text-maroon-700">{card.cta} &rarr;</p>
+      </a>
+    ))}
   </section>
 
-  <section class="mx-auto grid max-w-4xl gap-6 px-4 py-8 sm:grid-cols-3">
-    <a href="/bible-study/start-here/" class="rounded-lg border border-stone-200 bg-white p-5 hover:border-emerald-900">
-      <h3 class="font-semibold text-emerald-900">New to Bible Study</h3>
-      <p class="mt-2 text-sm text-stone-600">Start with the nine-step introductory series.</p>
-    </a>
-    <a href="/resources/books/" class="rounded-lg border border-stone-200 bg-white p-5 hover:border-emerald-900">
-      <h3 class="font-semibold text-emerald-900">Study a Book of the Bible</h3>
-      <p class="mt-2 text-sm text-stone-600">Browse resources organized canonically.</p>
-    </a>
-    <a href="/resources/" class="rounded-lg border border-stone-200 bg-white p-5 hover:border-emerald-900">
-      <h3 class="font-semibold text-emerald-900">Recent Messages</h3>
-      <p class="mt-2 text-sm text-stone-600">Browse the full resource library.</p>
-    </a>
-  </section>
-
-  <section class="mx-auto max-w-4xl px-4 py-8">
-    <h2 class="font-serif text-2xl font-semibold text-emerald-900">This Week</h2>
-    <dl class="mt-4 grid gap-4 sm:grid-cols-2">
-      <div class="rounded-lg border border-stone-200 bg-white p-4">
-        <dt class="text-sm font-semibold text-stone-500">Sunday Worship</dt>
-        <dd class="mt-1 text-stone-800">{settings?.data.worshipTime} · {settings?.data.worshipLocation}</dd>
+  <section class="border-t border-cream-200 bg-cream-100 py-10">
+    <div class="mx-auto max-w-5xl px-4">
+      <div class="flex items-center justify-between">
+        <h2 class="font-serif text-2xl font-semibold text-maroon-800">This Week</h2>
+        <a href="/events/" class="text-sm font-semibold text-maroon-700 hover:text-maroon-600">View all events &rarr;</a>
       </div>
-      <div class="rounded-lg border border-stone-200 bg-white p-4">
-        <dt class="text-sm font-semibold text-stone-500">Weekly Fellowship</dt>
-        <dd class="mt-1 text-stone-800">{settings?.data.fellowshipTime} · {settings?.data.fellowshipLocation}</dd>
-      </div>
-    </dl>
-    <p class="mt-3 text-xs text-stone-500">
-      This content is pulled from a single settings source so the homepage, Visit page, and About page never contradict each other.
-    </p>
+      <dl class="mt-4 grid gap-4 sm:grid-cols-2">
+        <div class="flex items-start gap-4 rounded-lg border border-cream-200 bg-white p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-6 w-6 shrink-0 text-maroon-700" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="m9 16 2 2 4-4"/></svg>
+          <div>
+            <dt class="font-semibold text-stone-800">Sunday Worship</dt>
+            <dd class="mt-1 text-stone-600">{settings?.data.worshipTime}<br />{settings?.data.worshipLocation}</dd>
+          </div>
+        </div>
+        <div class="flex items-start gap-4 rounded-lg border border-cream-200 bg-white p-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mt-0.5 h-6 w-6 shrink-0 text-maroon-700" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div>
+            <dt class="font-semibold text-stone-800">Weekly Fellowship</dt>
+            <dd class="mt-1 text-stone-600">{settings?.data.fellowshipTime}<br />{settings?.data.fellowshipLocation}</dd>
+          </div>
+        </div>
+      </dl>
+    </div>
   </section>
 
-  <section class="mx-auto max-w-4xl px-4 py-12 text-center">
-    <p class="font-serif text-xl text-emerald-900">Would you like to study the Bible with someone?</p>
-    <a href="/students/one-to-one-bible-study/" class="mt-4 inline-block rounded-md bg-emerald-900 px-6 py-3 font-semibold text-white hover:bg-emerald-800">
-      Request Bible Study
-    </a>
+  <section class="relative overflow-hidden py-16 text-center text-white">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-maroon-950 via-maroon-800 to-maroon-950"></div>
+    <div class="absolute inset-0 -z-10 bg-black/25"></div>
+    <div class="relative mx-auto max-w-2xl px-4">
+      <p class="font-serif text-2xl font-semibold">Would you like to study the Bible with someone?</p>
+      <p class="mt-2 text-cream-50/90">We would love to walk with you in God's Word.</p>
+      <a href="/students/one-to-one-bible-study/" class="mt-6 inline-block rounded-md bg-maroon-700 px-6 py-3 font-semibold hover:bg-maroon-600">
+        Request Bible Study
+      </a>
+    </div>
   </section>
 </BaseLayout>
