@@ -25,6 +25,12 @@ const navItems = [
     </nav>
 
     <div class="hidden items-center gap-3 lg:flex">
+      <a href="/bible-study/daily-bread/" class="flex items-center gap-1.5 rounded-md p-2 text-sm font-medium text-cream-100 hover:bg-maroon-800 hover:text-gold-400" title="Today's Daily Bread devotional">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+        </svg>
+        Daily Bread
+      </a>
       <a href="/search/" aria-label="Search" class="rounded-md p-2 text-cream-100 hover:bg-maroon-800 hover:text-gold-400">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true">
           <circle cx="11" cy="11" r="7"></circle>
@@ -56,6 +62,7 @@ const navItems = [
         <li><a class="block py-2" href={item.href}>{item.label}</a></li>
       ))}
       <li><a class="block py-2" href="/search/">Search</a></li>
+      <li><a class="block py-2" href="/bible-study/daily-bread/">Daily Bread</a></li>
       <li>
         <a class="mt-2 block rounded-md bg-gold-500 px-4 py-2 text-center font-semibold text-maroon-950" href="/students/one-to-one-bible-study/">
           Request Bible Study

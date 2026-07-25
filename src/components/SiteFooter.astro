@@ -1,6 +1,8 @@
 ---
 import { getEntry } from 'astro:content';
 import { getVerseOfDay } from '../lib/verse-of-day';
+import { Image } from 'astro:assets';
+import ubfBanner from '../assets/images/ubf-worldwide-banner.jpg';
 
 const year = new Date().getFullYear();
 const settings = await getEntry('settings', 'site');
@@ -65,12 +67,17 @@ const verse = getVerseOfDay();
       <p class="mt-2 text-cream-100/70">&mdash; {verse.reference} (KJV)</p>
     </div>
   </div>
-  <div class="border-t border-cream-100/15 px-4 py-4">
-    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 text-xs text-cream-100/70 sm:flex-row">
-      <p>&copy; {year} University Bible Fellowship of Shippensburg. All rights reserved.</p>
-      <div class="flex gap-4">
-        <a class="hover:text-gold-400" href="/privacy/">Privacy Policy</a>
-        <a class="hover:text-gold-400" href="/accessibility/">Accessibility</a>
+  <div class="border-t border-cream-100/15 px-4 py-6">
+    <div class="mx-auto flex max-w-6xl flex-col items-center gap-4">
+      <a href="https://ubf.org" rel="external noopener" class="rounded bg-white px-4 py-2" title="Part of University Bible Fellowship worldwide">
+        <Image src={ubfBanner} alt="University Bible Fellowship" widths={[240, 480]} sizes="240px" class="h-6 w-auto object-contain sm:h-7" />
+      </a>
+      <div class="flex flex-col items-center justify-between gap-2 text-xs text-cream-100/70 sm:flex-row sm:w-full">
+        <p>&copy; {year} University Bible Fellowship of Shippensburg. All rights reserved.</p>
+        <div class="flex gap-4">
+          <a class="hover:text-gold-400" href="/privacy/">Privacy Policy</a>
+          <a class="hover:text-gold-400" href="/accessibility/">Accessibility</a>
+        </div>
       </div>
     </div>
   </div>

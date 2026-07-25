@@ -1,7 +1,10 @@
 ---
-// Placeholder emblem — the ministry's real logo has not been provided yet
-// (see dev_spec.md "Required before visual design"). Swap the <svg> below
-// for the real mark when available; keep the wordmark markup as-is.
+// UBF's real worldwide mark (src/assets/images/ubf-mark.png, cropped from the
+// official banner) on a white badge chip so it reads cleanly against the
+// chapter's maroon/gold palette. See dev_spec.md for the design rationale.
+import { Image } from 'astro:assets';
+import ubfMark from '../assets/images/ubf-mark.png';
+
 interface Props {
   variant?: 'light' | 'dark';
 }
@@ -10,16 +13,9 @@ const isLight = variant === 'light';
 ---
 
 <a href="/" class="flex items-center gap-3">
-  <svg viewBox="0 0 48 56" class="h-10 w-9 shrink-0" aria-hidden="true">
-    <ellipse cx="24" cy="28" rx="23" ry="27" fill={isLight ? '#F4E6C4' : '#C8982F'} />
-    <ellipse cx="24" cy="28" rx="19" ry="23" fill={isLight ? '#5C1220' : '#5C1220'} />
-    <rect x="15" y="30" width="18" height="13" rx="1.5" fill="#FAF6EE" />
-    <line x1="24" y1="30" x2="24" y2="43" stroke="#5C1220" stroke-width="1" />
-    <g transform="translate(24,20)">
-      <rect x="-1.6" y="-9" width="3.2" height="16" rx="1" fill="#FAF6EE" />
-      <rect x="-7" y="-4" width="14" height="3.2" rx="1" fill="#FAF6EE" />
-    </g>
-  </svg>
+  <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white p-1.5 shadow-sm">
+    <Image src={ubfMark} alt="" widths={[40, 80]} sizes="40px" class="h-full w-full object-contain" />
+  </span>
   <span class="leading-tight">
     <span class={`block font-serif text-lg font-semibold ${isLight ? 'text-white' : 'text-maroon-900'}`}>
       UBF Shippensburg
