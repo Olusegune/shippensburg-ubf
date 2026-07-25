@@ -13,210 +13,40 @@ legacyUrls:
 status: draft
 ---
 
-_Extracted from the legacy file for review. Status is still "draft" — a human needs to read this and flip status to "published" before it goes live._
+_Extracted from the legacy file for review (word-segmentation repair applied; 1 token(s) could not be confidently segmented and are left as-is — check manually). Status is still "draft" — a human needs to read this and flip status to "published" before it goes live._
 
 ---
 
 IT IS TIME TO SEEK THE LORD
-Hosea 9:1-10:15
-Key Verse: 10:12
-“	Sow for yourselves righteousness, reap the fruit of unfailing love, and break up
-your unplowed ground; for it is time to seek the LORD, until he comes and
-showers righteousness on you.”
-Despite God’	s repeated warning and promises, the Israelites continued their
-spiritual idolatry. But God still did not abandon them. Once again God urged them to
-repent their sins. He encouraged them to break up their unplowed ground. He promised
-to shower righteousness on them. It was time for them to seek the Lord! May God help
-us to learn how to sow righteousness and reap the fruit of unfailing love!
-I. WHEN GOD’	S SERVANT IS CALLED A FOOL (9:1-17)
-Look at verse 1. Do not rejoice, O Israel; do not be jubilant like the other nations.
-For you have been unfaithful to your God; you love the wages of a prostitute at every
-threshing floor. God told his people not to rejoice and not to be jubilant because there
-would be consequence of their sins. How did the Israelites prostitute themselves? How
-were they unfaithful to their God? Verse 1 says that they loved “	the wages of a prostitute
-at every threshing floor.”Threshing was done on a flat area on a hilltop where wind
-would help them to separate grain and chaff. At night, men would guard their grain and
-prostitutes would visit them there. But their sexual sin was just a beginning of more
-serious transgressions. They used the hilltop place to offer sacrifice to Baal. Their
-spiritual idolatry broke God’	s heart. How would God punish them? Threshing floors and
-winepresses would not feed them (2). They would be exiled to Assyria and eat unclean
-food (3). There wouldn’	t be able to worship God freely in the temple. There would be no
-joy on the days of appointed feasts. Their festival days and family life will be taken away
-(4-5). Even if they escape from destruction, Egypt will gather them, and Memphis will
-bury them. Their treasures of silver will be taken over by briers, and thorns will
-overrun their tents (6). Even if they realize the true intentions of Assyria and they turn
-to Egypt, this super power nation would not protect them. (Memphis was an ancient
-Egyptian capital situated on the Nile River some fifteen miles South of Cairo.) Their only
-hope was to abandon their idolatry and return to God.
-Look at verse 7. The days of punishment are coming, the days of reckoning are
-at hand. Let Israel know this. Because your sins are so many and your hostility so
-great, the prophet is considered a fool, the inspired man a maniac. This verse tells us
-how difficult Hosea’	s ministry was. He preached the word of God to his people with a
-broken shepherd’	s heart. He warned them that they would have to pay for their spiritual
-idolatry. He made it clear that sin demands punishment. But his people laughed at him.
-They didn’	t pay attention to his warnings. Instead, they considered him a fool and a
-maniac. When he preached the upcoming judgment of God, Jerusalem Herald reported,
-“	Hosea opposes our alliance with Assyria. This maniac says we will be punished by God.
-Jerusalem leaders are demanding that he be committed to mental institution.”When
-
--- 1 of 5 --
+Hosea 9:1-10:15 Key Verse: 10:12
+"Sow for yourselves righteousness, reap the fruit of unfailing love, and break up your unplowed ground; for it is time to seek the LORD, until he comes and showers righteousness on you."
+Despite God's repeated warning and promises, the Israelites continued their spiritual idolatry. But God still did not abandon them. Once again God urged them to repent their sins. He encouraged them to break up their unplowed ground. He promised to shower righteousness on them. It was time for them to seek the Lord! May God help us to learn how to sow righteousness and reap the fruit of unfailing love!
+I. WHEN GOD'S SERVANT IS CALLED A FOOL (9:1-17)
+Look at verse 1. Do not rejoice, O Israel; do not be jubilant like the other nations. For you have been unfaithful to your God; you love the wages of a prostitute at every threshing floor. God told his people not to rejoice and not to be jubilant because there would be consequence of their sins. How did the Israelites prostitute themselves? How were they unfaithful to their God? Verse 1 says that they loved "the wages of a prostitute at every threshing floor."Threshing was done on a flat area on a hilltop where wind would help them to separate grain and chaff. At night, men would guard their grain and prostitutes would visit them there. But their sexual sin was just a beginning of more serious transgressions. They used the hilltop place to offer sacrifice to Baal. Their spiritual idolatry broke God's heart. How would God punish them? Threshing floors and winepresses would not feed them (2). They would be exiled to Assyria and eat unclean food (3). There wouldn't be able to worship God freely in the temple. There would be no joy on the days of appointed feasts. Their festival days and family life will be taken away (4-5). Even if they escape from destruction, Egypt will gather them, and Memphis will bury them. Their treasures of silver will be taken over by briers, and thorns will overrun their tents (6). Even if they realize the true intentions of Assyria and they turn to Egypt, this super power nation would not protect them. (Memphis was an ancient Egyptian capital situated on the Nile River some fifteen miles South of Cairo.) Their only hope was to abandon their idolatry and return to God.
+Look at verse 7. The days of punishment are coming, the days of reckoning are at hand. Let Israel know this. Because your sins are so many and your hostility so great, the prophet is considered a fool, the inspired man a maniac. This verse tells us how difficult Hosea's ministry was. He preached the word of God to his people with a broken shepherd's heart. He warned them that they would have to pay for their spiritual idolatry. He made it clear that sin demands punishment. But his people laughed at him. They didn't pay attention to his warnings. Instead, they considered him a fool and a maniac. When he preached the upcoming judgment of God, Jerusalem Herald reported, "Hosea opposes our alliance with Assyria. This maniac says we will be punished by God. Jerusalem leaders are demanding that he be committed to mental institution."When
 
 2
-Hosea spoke the truth, people called him a madman. But God’	s servants were the ones
-who, with God himself, watched over the land. Hosea was the watchman over Ephraim
-(8). He was the conscience of the corrupted society. Likewise, God wants us to be his
-servants to preserve and preach the truth of God. The words of truth are often
-uncomfortable to hear. So people in our society may become hostile toward us when we
-preach the word of God. We may be called insane. But we must be the messengers of
-God who tell the truth so that people may repent and turn to God.
-Look at verse 9. They have sunk deep into corruption, as in the days of Gibeah.
-God will remember their wickedness and punish them for their sins. Gibeah is one of
-several cities that Hosea mentions in these chapters to show how corrupt the people had
-become. So what happened in Gibeah? The whole sordid story is recorded in Judges 19.
-A Levite from the hill country of Ephraim took a concubine from Bethlehem in Judah.
-He and the woman happened to stay overnight in Gibeah (a city in the tribe of
-Benjamin), in the house of an old man, when some wicked men of the city came to the
-house and demanded the traveler to come out to have sex with them. The host offered
-them to give his virgin daughter or the Levite’	s concubine so that they could do whatever
-they wished. Then the wicked men of the city took the concubine and gang-raped her
-brutally and left her dead on the doorstep. The Levite cut up her dead body into 12
-pieces and sent them to each tribe of Israel. Then the tribes of Israel assembled army to
-fight against the Benjamites. The tribal war resulted in the death of 25,000 Benjamites.
-The city along with other Benjamite towns was wiped out (Jdg 20:8-48). This terrible
-incident showed how sinful the people had become. The Levite was corrupt. The men of
-Gibeah were evil. This incident became a symbol of national embarrassment and shame.
-Hosea said that the whole nation was now evil as the city of Gibeah.
-The chosen people of God became utterly corrupt. But they didn’	t start out that
-way. Look at verse 10. “	When I found Israel, it was like finding grapes in the desert;
-when I saw your fathers, it was like seeing the early fruit on the fig tree. But when they
-came to Baal Peor, they consecrated themselves to that shameful idol and became as
-vile as the thing they loved.”Israel was beautiful when they were with God. They were
-fruitful. They were like juicy grapes in the desert—refreshing, delicious, and full of life.
-But they abandoned God’	s love and turned to worthless idols. Their idolatry began even
-as they traveled through the wilderness toward the Promised Land. It happened some
-600 years before Hosea’	s time. Mt. Peor was located in the east of the Jordan River, in
-the territory of the Moabites. There the people of God were seduced to commit sexual
-sin and began to worship Baal, the shameful idol.
-Let us read verse 14. “	Give them, O LORD--what will you give them? Give them
-wombs that miscarry and breasts that are dry.”This was Hosea’	s prayer for his people,
-and it is probably the worst kind of prayer one could offer to God. Actually it sounds
-more like a curse than a prayer. He says to God, “	Lord, give them miscarriage, high
-infant mortality, and breast cancer.”How would you feel if I offer this kind of prayer for
-you? So why did Hosea pray like this? He foresaw the destruction that Israel’	s sin would
-bring (2Ki 17:7-23). He did not want children suffer the horrible consequence of their
-sins. Hosea loved his people too much to leave them in their terrible sin of idolatry. He
-prayed to God to punish them so that they might come to their senses and turn to God.
-
--- 2 of 5 --
+Hosea spoke the truth, people called him a madman. But God's servants were the ones who, with God himself, watched over the land. Hosea was the watchman over Ephraim (8). He was the conscience of the corrupted society. Likewise, God wants us to be his servants to preserve and preach the truth of God. The words of truth are often uncomfortable to hear. So people in our society may become hostile toward us when we preach the word of God. We may be called insane. But we must be the messengers of God who tell the truth so that people may repent and turn to God.
+Look at verse 9. They have sunk deep into corruption, as in the days of Gibeah. God will remember their wickedness and punish them for their sins. Gibeah is one of several cities that Hosea mentions in these chapters to show how corrupt the people had become. So what happened in Gibeah? The whole sordid story is recorded in Judges 19. A Levite from the hill country of Ephraim took a concubine from Bethlehem in Judah. He and the woman happened to stay overnight in Gibeah (a city in the tribe of Benjamin), in the house of an old man, when some wicked men of the city came to the house and demanded the traveler to come out to have sex with them. The host offered them to give his virgin daughter or the Levite's concubine so that they could do whatever they wished. Then the wicked men of the city took the concubine and gang-raped her brutally and left her dead on the doorstep. The Levite cut up her dead body into 12 pieces and sent them to each tribe of Israel. Then the tribes of Israel assembled army to fight against the Ben ja mites. The tribal war resulted in the death of 25,000 Ben ja mites. The city along with other Benjamite towns was wiped out (Jdg 20:8-48). This terrible incident showed how sinful the people had become. The Levite was corrupt. The men of Gibeah were evil. This incident became a symbol of national embarrassment and shame. Hosea said that the whole nation was now evil as the city of Gibeah.
+The chosen people of God became utterly corrupt. But they didn't start out that way. Look at verse 10. "When I found Israel, it was like finding grapes in the desert; when I saw your fathers, it was like seeing the early fruit on the fig tree. But when they came to Baal Peor, they consecrated themselves to that shameful idol and became as vile as the thing they loved."Israel was beautiful when they were with God. They were fruitful. They were like juicy grapes in the desert--refreshing, delicious, and full of life. But they abandoned God's love and turned to worthless idols. Their idolatry began even as they traveled through the wilderness toward the Promised Land. It happened some 600 years before Hosea's time. Mt. Peor was located in the east of the Jordan River, in the territory of the Moabites. There the people of God were seduced to commit sexual sin and began to worship Baal, the shameful idol.
+Let us read verse 14. "Give them, O LORD--what will you give them? Give them wombs that miscarry and breasts that are dry."This was Hosea's prayer for his people, and it is probably the worst kind of prayer one could offer to God. Actually it sounds more like a curse than a prayer. He says to God, "Lord, give them miscarriage, high infant mortality, and breast cancer."How would you feel if I offer this kind of prayer for you? So why did Hosea pray like this? He foresaw the destruction that Israel's sin would bring (2Ki 17:7-23). He did not want children suffer the horrible consequence of their sins. Hosea loved his people too much to leave them in their terrible sin of idolatry. He prayed to God to punish them so that they might come to their senses and turn to God.
 
 3
-His unusual prayer came out of his heart that was broken because of his people’	s
-idolatry.
-Look at verses 15-17. “	Because of all their wickedness in Gilgal, I hated them
-there. Because of their sinful deeds, I will drive them out of my house. I will no longer
-love them; all their leaders are rebellious. Ephraim is blighted, their root is withered,
-they yield no fruit. Even if they bear children, I will slay their cherished offspring. My
-God will reject them because they have not obeyed him; they will be wanderers among
-the nations.”Gilgal was one of the first cities in Canaan Joshua designated as a center of
-worship as they crossed over the Jordan. Joshua led the nation in prayer in Gilgal. Now
-however, the city became a center for Baal worship. It became a wicked city.
-II. “	BREAK UP YOUR UNPLOWED GROUND”(10:1-15)
-Look at 10:1-2. Israel was a spreading vine; he brought forth fruit for himself.
-As his fruit increased, he built more altars; as his land prospered, he adorned his
-sacred stones. Their heart is deceitful, and now they must bear their guilt. The LORD
-will demolish their altars and destroy their sacred stones. Under Jeroboam II, Israel
-actually enjoyed economic prosperity as well as political stability. Israel was compared
-to a fruitful, spreading vine. However, the people became more corrupt and idolatrous
-in their prosperity. There is something about material prosperity that causes people to
-stray away from God. Korean young people used to be very receptive to the word of God
-when the country was struggling economically. However since the nation attained the
-status of the world’	s 11th economic power, they seem to be more interested in human
-things than spiritual matters. We are told that the same is true for Russian people. We
-learn that we should not forget God in our material abundance!
-When the Israelites abandoned God and followed the Canaanite culture and
-religion, they expected their lives to be better. Instead, their society became godless and
-corrupt. Look at verse 4. They make many promises, take false oaths and make
-agreements; therefore lawsuits spring up like poisonous weeds in a plowed field. Their
-political leaders made many campaign promises that they never kept. A woman got
-burned by spilling her coffee and then sued the fast food company for serving it too hot.
-The people in Samaria feared for the calf-idol of Beth Aven (house of wickedness; a
-derogatory name for Bethel, house of God). They had no peace in their hearts. Their
-religious leaders led them in their idolatry (5). Their leaders sinned against God and the
-people followed them. Not only they sinned, but they remained in their sin. They were
-persistent in their sin. Look at verse 9a. “	Since the days of Gibeah, you have sinned, O
-Israel, and there you have remained.”The Israelites were persistent and consistent in
-their sins against God. Day in and day out, they practiced their wickedness without
-regard to God and his love toward them.
-What would God do to such people? How did he warn them? They would be
-taken into exile in Assyria (5-6). They would be ashamed of their wooden idols. Their
-country and their king would float away like a twig on the surface of the waters (7).
-Thorns and thistles would grow up and cover their pagan altars. God would punish them
-for their sin. Then they would cry out to the mountains, “	Cover us!”and to the hills,
-
--- 3 of 5 --
+His unusual prayer came out of his heart that was broken because of his people's idolatry.
+Look at verses 15-17. "Because of all their wickedness in Gilgal, I hated them there. Because of their sinful deeds, I will drive them out of my house. I will no longer love them; all their leaders are rebellious. Ephraim is blighted, their root is withered, they yield no fruit. Even if they bear children, I will slay their cherished offspring. My God will reject them because they have not obeyed him; they will be wanderers among the nations."Gilgal was one of the first cities in Canaan Joshua designated as a center of worship as they crossed over the Jordan. Joshua led the nation in prayer in Gilgal. Now however, the city became a center for Baal worship. It became a wicked city.
+II. "BREAK UP YOUR UNPLOWED GROUND"(10:1-15)
+Look at 10:1-2. Israel was a spreading vine; he brought forth fruit for himself. As his fruit increased, he built more altars; as his land prospered, he adorned his sacred stones. Their heart is deceitful, and now they must bear their guilt. The LORD will demolish their altars and destroy their sacred stones. Under Jeroboam II, Israel actually enjoyed economic prosperity as well as political stability. Israel was compared to a fruitful, spreading vine. However, the people became more corrupt and idolatrous in their prosperity. There is something about material prosperity that causes people to stray away from God. Korean young people used to be very receptive to the word of God when the country was struggling economically. However since the nation attained the status of the world's 11th economic power, they seem to be more interested in human things than spiritual matters. We are told that the same is true for Russian people. We learn that we should not forget God in our material abundance!
+When the Israelites abandoned God and followed the Canaanite culture and religion, they expected their lives to be better. Instead, their society became godless and corrupt. Look at verse 4. They make many promises, take false oaths and make agreements; therefore lawsuits spring up like poisonous weeds in a plowed field. Their political leaders made many campaign promises that they never kept. A woman got burned by spilling her coffee and then sued the fast food company for serving it too hot. The people in Samaria feared for the calf-idol of Beth Aven (house of wickedness; a derogatory name for Bethel, house of God). They had no peace in their hearts. Their religious leaders led them in their idolatry (5). Their leaders sinned against God and the people followed them. Not only they sinned, but they remained in their sin. They were persistent in their sin. Look at verse 9a. "Since the days of Gibeah, you have sinned, O Israel, and there you have remained."The Israelites were persistent and consistent in their sins against God. Day in and day out, they practiced their wickedness without regard to God and his love toward them.
+What would God do to such people? How did he warn them? They would be taken into exile in Assyria (5-6). They would be ashamed of their wooden idols. Their country and their king would float away like a twig on the surface of the waters (7). Thorns and thistles would grow up and cover their pagan altars. God would punish them for their sin. Then they would cry out to the mountains, "Cover us!"and to the hills,
 
 4
-“	Fall on us!”(8) Jesus warned the people of Jerusalem with the same words about the
-upcoming judgment of God for the unrepentant (Lk 23:27-31).
-Look at verse 11. Ephraim is a trained heifer that loves to thresh; so I will put a
-yoke on her fair neck. I will drive Ephraim, Judah must plow, and Jacob must break
-up the ground. God called his people Israel to be his chosen people. He loved them and
-trained them with his word in the hope of making them a kingdom of priests and a holy
-nation. But they only loved to thresh. The heifer on the threshing floor had a much
-easier job than the ox that plowed the field. There was no yoke put on its neck. It could
-eat as much as grain it wanted. Israel was like a heifer that only wanted to enjoy God’	s
-blessings and refused to do the hard work. But God warned them that he would put a
-yoke on her fair neck.
-Was there a way out for the Israelites? How can the condemned sinners escape
-God’	s judgment? One thing we learn from the book of Hosea is that God leaves open a
-door of salvation even as he pronounces his judgment. A message of hope is sprinkled
-all over the book of Hosea. So what is the solution for the sinful humanity that is
-condemned to eternal punishment? What is the way out for us?
-Let us read verse 12. “	Sow for yourselves righteousness, reap the fruit of
-unfailing love, and break up your unplowed ground; for it is time to seek the LORD,
-until he comes and showers righteousness on you.”Hosea encouraged his people to sow
-righteousness and reap the fruit of unfailing love. The people of Israel were sowing to
-the wind and reaping the fruit of evil when they worshiped the Baals. Now it was time
-for them to seek the Lord. How can we seek the Lord? Hosea says we must break up our
-unplowed ground. An unplowed ground is hard and full of rocks; it is not ready for good
-crop. Likewise, an unrepentant heart cannot bear good fruit. What grows in an
-unplowed field? Only thorns and dandelions! Come the season of harvest, the field
-yields nothing useful. Likewise, if our heart is like an unplowed field, we cannot be
-fruitful before God. There is no joy in the harvest season.
-We must plow our hardened hearts by repenting our sins before God. The
-unplowed ground here represents the spiritual condition of Israel. They had been
-blessed by God, but when they turned to idols, they became like dry, unplowed field,
-unfit for good crop. They had to repent their spiritual idolatry and turn to God.
-In the parable of the sower, Jesus talks about three unfruitful kinds of soil (path,
-rocky and thorny). Only when a person cultivates his heart by plowing (repenting), he
-can have a good heart soil that produces fruit 30, 60, 100 times what is sown. Unplowed
-ground does not become good soil over time automatically. No matter how long we have
-lived the life of a missionary or a shepherd, our unplowed field cannot bear good crop. If
-anything, the field becomes more hardened if left unplowed, as many worries in life and
-deceitfulness of wealth march around on the field. It is time for us to repent and turn to
-God. It is time for us to study the word of God with a sincere attitude and write
-repentant testimonies. God will come to us and shower righteousness on us!
-
--- 4 of 5 --
+"Fall on us!"(8) Jesus warned the people of Jerusalem with the same words about the upcoming judgment of God for the unrepentant (Lk 23:27-31).
+Look at verse 11. Ephraim is a trained heifer that loves to thresh; so I will put a yoke on her fair neck. I will drive Ephraim, Judah must plow, and Jacob must break up the ground. God called his people Israel to be his chosen people. He loved them and trained them with his word in the hope of making them a kingdom of priests and a holy nation. But they only loved to thresh. The heifer on the threshing floor had a much easier job than the ox that plowed the field. There was no yoke put on its neck. It could eat as much as grain it wanted. Israel was like a heifer that only wanted to enjoy God's blessings and refused to do the hard work. But God warned them that he would put a yoke on her fair neck.
+Was there a way out for the Israelites? How can the condemned sinners escape God's judgment? One thing we learn from the book of Hosea is that God leaves open a door of salvation even as he pronounces his judgment. A message of hope is sprinkled all over the book of Hosea. So what is the solution for the sinful humanity that is condemned to eternal punishment? What is the way out for us?
+Let us read verse 12. "Sow for yourselves righteousness, reap the fruit of unfailing love, and break up your unplowed ground; for it is time to seek the LORD, until he comes and showers righteousness on you."Hosea encouraged his people to sow righteousness and reap the fruit of unfailing love. The people of Israel were sowing to the wind and reaping the fruit of evil when they worshiped the Baals. Now it was time for them to seek the Lord. How can we seek the Lord? Hosea says we must break up our unplowed ground. An unplowed ground is hard and full of rocks; it is not ready for good crop. Likewise, an unrepentant heart cannot bear good fruit. What grows in an unplowed field? Only thorns and dandelions! Come the season of harvest, the field yields nothing useful. Likewise, if our heart is like an unplowed field, we cannot be fruitful before God. There is no joy in the harvest season.
+We must plow our hardened hearts by repenting our sins before God. The unplowed ground here represents the spiritual condition of Israel. They had been blessed by God, but when they turned to idols, they became like dry, unplowed field, unfit for good crop. They had to repent their spiritual idolatry and turn to God.
+In the parable of the sower, Jesus talks about three unfruitful kinds of soil (path, rocky and thorny). Only when a person cultivates his heart by plowing (repenting), he can have a good heart soil that produces fruit 30, 60, 100 times what is sown. Unplowed ground does not become good soil over time automatically. No matter how long we have lived the life of a missionary or a shepherd, our unplowed field cannot bear good crop. If anything, the field becomes more hardened if left unplowed, as many worries in life and deceitfulness of wealth march around on the field. It is time for us to repent and turn to God. It is time for us to study the word of God with a sincere attitude and write repentant testimonies. God will come to us and shower righteousness on us!
 
 5
-What will happen if sinners refuse to break up their unplowed ground? Look at
-verses 13-15. Why did the Israelites eat the fruit of deception? It was because of their
-arrogance to depend on their own strength and other super power nations rather than
-the Almighty God. They planted wickedness and reaped the evil. What was God’	s divine
-judgment reserved for the wicked people? Shalman devastated Beth Arbel on the day of
-battle (Beth Arbel was located near the Sea of Galilee). We don’	t know who exactly
-Shalman was, but he was probably a military leader from Assyria or Moab. He
-committed an unspeakable atrocity, dashing mothers to the ground with their children—
-a kind of thing that the Iraqi al-Qaeda would do today. When the Israelites tried to bring
-order to their land by building a bigger army and a stronger police force, they only made
-a society that was more corrupt and violence-filled. The only hope of a nation is people
-who seek the Lord with repentant hearts.
-We learned today that there is consequence of sin. Our holy God would not sweep
-sin under a rug and say, “	Don’	t worry about anything.”Instead, he warns us that the
-days of reckoning are coming (9:7). God will remember our wickedness and punish us
-for our sins (9:9). But God also opened a door of salvation through his Son Jesus Christ.
-If we repent our sins by plowing our hardened hearts and turn to him, he will come to us
-and shower righteousness on us. It is time for us to seek the Lord!
-
--- 5 of 5 --
+What will happen if sinners refuse to break up their unplowed ground? Look at verses 13-15. Why did the Israelites eat the fruit of deception? It was because of their arrogance to depend on their own strength and other super power nations rather than the Almighty God. They planted wickedness and reaped the evil. What was God's divine judgment reserved for the wicked people? Shalman devastated Beth Arbel on the day of battle (Beth Arbel was located near the Sea of Galilee). We don't know who exactly Shalman was, but he was probably a military leader from Assyria or Moab. He committed an unspeakable atrocity, dashing mothers to the ground with their children-- a kind of thing that the Iraqi al-Qaeda would do today. When the Israelites tried to bring order to their land by building a bigger army and a stronger police force, they only made a society that was more corrupt and violence-filled. The only hope of a nation is people who seek the Lord with repentant hearts.
+We learned today that there is consequence of sin. Our holy God would not sweep sin under a rug and say, "Don't worry about anything."Instead, he warns us that the days of reckoning are coming (9:7). God will remember our wickedness and punish us for our sins (9:9). But God also opened a door of salvation through his Son Jesus Christ. If we repent our sins by plowing our hardened hearts and turn to him, he will come to us and shower righteousness on us. It is time for us to seek the Lord!
