@@ -5,7 +5,7 @@ worshipTime: "Sundays at 11:00 AM"
 worshipLocation: "Spiritual Center"
 fellowshipTime: "Thursdays at 7:00 PM"
 fellowshipLocation: "CUB Room 240"
-address: "Shippensburg University campus, Shippensburg, PA (exact building/street address not published on the legacy site — confirm with ministry)"
+address: "Shippensburg University campus, Shippensburg, PA"
 mapUrl: "https://www.google.com/maps/search/?api=1&query=Shippensburg+University"
 socialUrls:
   - "https://www.facebook.com/shipubf"
