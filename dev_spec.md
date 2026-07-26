@@ -3,8 +3,10 @@
 Scaffolded per the approved brief (Steps 1–7). This file tracks what's implemented vs. still pending.
 
 ## Implemented
-- Astro + TypeScript + Tailwind 4 foundation, deployed via Cloudflare Pages from
-  [github.com/Olusegune/shippensburg-ubf](https://github.com/Olusegune/shippensburg-ubf)
+- Astro + TypeScript + Tailwind 4 foundation. Source at
+  [github.com/Olusegune/shippensburg-ubf](https://github.com/Olusegune/shippensburg-ubf). **Moving hosting from
+  Cloudflare Pages to Netlify** — Netlify Forms (already used by the Bible-study-request form) and Decap CMS's
+  `git-gateway` auth both need Netlify specifically; see `netlify.toml` and the CMS setup note below.
 - Content collections: `pages`, `resources`, `series`, `events`, `testimonies`, `people`, `settings`
 - `resources` schema with the full brief metadata set (book, testament, passage, resourceType, series,
   lessonNumber, audience, topics, author, source, date, keyVerse, pdf, pairedResource, externalUrl, legacyUrls)
@@ -26,6 +28,10 @@ Scaffolded per the approved brief (Steps 1–7). This file tracks what's impleme
 - Daily Bread (`/bible-study/daily-bread/`) links directly to today's entry on ubf.org rather than scraping/mirroring it — that page's devotional commentary and NIV/ESV Bible text are copyrighted and not ours to republish; linking to the live "today" URL also means it never goes stale
 - Footer "Verse of the Day" uses a small curated King James Version (public domain) verse list (`src/lib/verse-of-day.ts`) — swap translation once the ministry confirms a preference
 - `/resources/` index splits Old/New Testament with canonical book-and-chapter ordering (not alphabetical)
+- Decap CMS admin at `/admin/` (`public/admin/config.yml` + `index.html`), covering Site Settings, Events,
+  Testimonies, People, and Resources collections. Auth via Netlify Identity + Git Gateway — **requires manual
+  setup in the Netlify dashboard** (Identity: Enable: Site settings -> Identity; Git Gateway: Site settings ->
+  Identity -> Services -> Git Gateway -> Enable), then invite editor emails under Identity -> Invite users.
 
 ## Content migration status (from ship-ubf.org)
 Scripts live in `scripts/`, re-runnable against `migration/download_log.csv` and friends.
@@ -40,9 +46,8 @@ Scripts live in `scripts/`, re-runnable against `migration/download_log.csv` and
 | Photo album | Not yet crawled | — | — | Brief already recommends replacing/removing this section rather than migrating |
 
 ## Not yet implemented (see brief Step 7 for phase ordering)
-- Pagefind search integration
-- Decap CMS admin
-- Redirect map for legacy URLs (raw link inventory exists in `migration/`, redirect rules not yet generated)
+- Connect the repo to Netlify (currently only scaffolded via `netlify.toml`; if a Cloudflare Pages project was
+  already connected, decide whether to fully cut over or keep both — running both long-term risks content drift)
 - Sitemap/robots.txt generation, structured data (Organization/Event/Article/Breadcrumb schema)
 - Axe/Playwright/Lighthouse CI wiring
 - Real ministry assets (logo, photography, confirmed schedule, leadership names) — blocked on ministry providing these

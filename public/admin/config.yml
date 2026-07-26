@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Auth is handled by Netlify Identity + Git Gateway (enable both in the Netlify
+# dashboard: Site settings -> Identity -> Enable, then Services -> Git Gateway
+# -> Enable). No OAuth app or custom proxy needed.
+publish_mode: simple
+media_folder: "public/downloads/cms-uploads"
+public_folder: "/downloads/cms-uploads"
+
+collections:
+  - name: settings
+    label: "Site Settings"
+    files:
+      - file: "src/content/settings/site.md"
+        label: "Ministry Info"
+        name: "site"
+        fields:
+          - { label: "Ministry Email", name: "ministryEmail", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Sunday Worship Time", name: "worshipTime", widget: "string" }
+          - { label: "Sunday Worship Location", name: "worshipLocation", widget: "string" }
+          - { label: "Weekly Fellowship Time", name: "fellowshipTime", widget: "string" }
+          - { label: "Weekly Fellowship Location", name: "fellowshipLocation", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Map URL", name: "mapUrl", widget: "string" }
+          - { label: "Social URLs", name: "socialUrls", widget: "list", field: { label: "URL", name: "url", widget: "string" }, required: false }
+          - { label: "Notes (not shown on site)", name: "body", widget: "markdown", required: false }
+
+  - name: events
+    label: "Events"
+    folder: "src/content/events"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Start Date", name: "startDate", widget: "datetime" }
+      - { label: "End Date", name: "endDate", widget: "datetime", required: false }
+      - { label: "Status", name: "status", widget: "select", options: ["draft", "published"], default: "draft" }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Online URL", name: "onlineUrl", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Registration URL", name: "registrationUrl", widget: "string", required: false }
+      - { label: "Contact", name: "contact", widget: "string", required: false }
+      - { label: "Details", name: "body", widget: "markdown", required: false }
+
+  - name: testimonies
+    label: "Testimonies"
+    folder: "src/content/testimonies"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Written consent obtained?", name: "consentGiven", widget: "boolean", default: false, hint: "Do not publish without explicit written consent from this person." }
+      - { label: "Status", name: "status", widget: "select", options: ["draft", "published"], default: "draft" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Story", name: "body", widget: "markdown", required: false }
+
+  - name: people
+    label: "Leaders & Character Studies"
+    folder: "src/content/people"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image", required: false }
+      - { label: "Bio", name: "body", widget: "markdown", required: false }
+
+  - name: resources
+    label: "Bible Study Resources"
+    folder: "src/content/resources"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Book"
+        name: "book"
+        widget: "select"
+        options: [Genesis, Exodus, Leviticus, Numbers, Deuteronomy, Joshua, Judges, Ruth, "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles", Ezra, Nehemiah, Esther, Job, Psalms, Proverbs, Ecclesiastes, "Song of Songs", Isaiah, Jeremiah, Lamentations, Ezekiel, Daniel, Hosea, Joel, Amos, Obadiah, Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi, Matthew, Mark, Luke, John, Acts, Romans, "1 Corinthians", "2 Corinthians", Galatians, Ephesians, Philippians, Colossians, "1 Thessalonians", "2 Thessalonians", "1 Timothy", "2 Timothy", Titus, Philemon, Hebrews, James, "1 Peter", "2 Peter", "1 John", "2 John", "3 John", Jude, Revelation]
+      - { label: "Testament", name: "testament", widget: "select", options: ["old", "new"] }
+      - label: "Passage"
+        name: "passage"
+        widget: "object"
+        fields:
+          - { label: "Start", name: "start", widget: "string" }
+          - { label: "End", name: "end", widget: "string", required: false }
+      - { label: "Resource Type", name: "resourceType", widget: "select", options: ["study-questions", "message", "testimony", "article", "devotional"] }
+      - { label: "Status", name: "status", widget: "select", options: ["draft", "published"], default: "draft" }
+      - { label: "Series", name: "series", widget: "string", required: false }
+      - { label: "Lesson Number", name: "lessonNumber", widget: "number", required: false }
+      - { label: "Audience", name: "audience", widget: "select", multiple: true, options: ["beginner", "student", "general"], required: false }
+      - { label: "Topics", name: "topics", widget: "list", required: false }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - { label: "Source", name: "source", widget: "string", required: false }
+      - { label: "Key Verse", name: "keyVerse", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "PDF / Download Path", name: "pdf", widget: "string", required: false }
+      - { label: "Paired Resource Slug", name: "pairedResource", widget: "string", required: false }
+      - { label: "External URL", name: "externalUrl", widget: "string", required: false }
+      - { label: "Legacy URLs", name: "legacyUrls", widget: "list", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
